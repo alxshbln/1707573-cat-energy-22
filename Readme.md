@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Oleksii Shabalin](https://up.htmlacademy.ru/adaptive/22/user/1707573).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/adaptive/22/user/215761).
 
 ---
 
