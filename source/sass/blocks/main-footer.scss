@@ -1,0 +1,33 @@
+.main-footer {
+  padding-top: 39px;
+  padding-bottom: 22px;
+}
+
+.main-footer__logo {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.main-footer__logo-link {
+  display: inline-block;
+}
+
+.main-footer__social {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
+}
+
+.main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-decoration: none;
+}

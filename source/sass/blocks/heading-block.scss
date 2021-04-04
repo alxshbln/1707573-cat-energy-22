@@ -1,0 +1,33 @@
+.heading-block {
+  padding-top: 27px;
+  padding-bottom: 22px;
+  background: $contrast url('../img/index-background-heading.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.heading-block__wrapper {
+  text-align: center;
+}
+
+.heading-block__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+
+.heading-block__text {
+  margin: 0;
+  padding: 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
