@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -22,13 +24,13 @@
 
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+              <a class="main-nav__item-link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -54,8 +56,8 @@
 
         <div class="container">
           <div class="programs__wrapper">
-            <article class="programs__item programs__item--cat-slim program">
-              <h2 class="program__title">Похудение</h2>
+            <article class="programs__item program">
+              <h2 class="program__title program__title--slim">Похудение</h2>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a href="#" class="program__link">
                 <span class="program__link-text">Каталог Slim</span>
@@ -66,8 +68,8 @@
               </a>
             </article>
 
-            <article class="programs__item programs__item--cat-strong program">
-              <h2 class="program__title">Набор массы</h2>
+            <article class="programs__item program">
+              <h2 class="program__title program__title--strong">Набор массы</h2>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a href="#" class="program__link">
                 <span class="program__link-text">Каталог Pro</span>
@@ -104,7 +106,7 @@
       <section class="demonstration">
         <div class="container">
           <h2 class="demonstration__title">Живой пример</h2>
-          <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
           <div class="demonstration__stats">
             <div class="demonstration__outer">
@@ -120,7 +122,7 @@
             </div>
 
             <p class="demonstration__caption">
-              <span>Затраты на питание</span>
+              <span>Затраты на питание:</span>
               <span>15 000 руб.</span>
             </p>
           </div>
