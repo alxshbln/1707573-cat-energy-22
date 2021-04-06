@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: Arial;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -11,4 +11,23 @@
 .page__body {
   min-height: 100%;
   margin: 0;
+}
+
+.page-main__title {
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.page-main__subtitle {
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
 }
