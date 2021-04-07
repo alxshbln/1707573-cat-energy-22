@@ -114,6 +114,14 @@
   }
 }
 
+.selection-form__label--radio {
+  color: $special-grey-label;
+}
+
+.selection-form__label--checkbox {
+  color: $black;
+}
+
 .selection-form__label--radio,
 .selection-form__label--checkbox {
   position: relative;
@@ -171,6 +179,8 @@
 
 .selection-form__submit {
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .selection-form__required {
