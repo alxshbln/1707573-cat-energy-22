@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 33px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  font-family: Arial, sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -31,7 +31,7 @@
 }
 
 .demonstration__caption {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -45,7 +45,7 @@
 }
 
 .demonstration__stats-value {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -54,7 +54,7 @@
 }
 
 .demonstration__stats-text {
-  font-family: Arial, sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -67,9 +67,9 @@
   margin: 0;
   padding: 0;
   background-color: transparent;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $custom-font;
   font-style: normal;
-  font-weight: 400 ;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -81,7 +81,7 @@
   position: relative;
   width: 84px;
   height: 14px;
-  background: #FFFFFF;
+  background: $white;
   border: 1px solid $special-grey-border;
   border-radius: 6px;
 }

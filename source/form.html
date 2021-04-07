@@ -2,7 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Подбор программы Кэт энерджи</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,7 +14,7 @@
           <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </a>
 
-        <a href="index.html" class="page-header__title-logo">
+        <a class="page-header__title-logo">
           <img src="img/header-title-logo.svg" width="101" height="18" alt="Заголовок Cat Energy">
         </a>
 
@@ -22,13 +25,13 @@
 
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a href="index.html" class="main-nav__item-link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>Подбор программы</a>
+              <a class="main-nav__item-link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -40,9 +43,11 @@
         <div class="container">
           <h1 class="page-main__title">Подбор программы</h1>
           <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
 
-          <form action="https://echo.htmlacademy.ru" class="selection-form" method="get">
-            <fieldset class="selection-form__fieldset">
+        <form action="https://echo.htmlacademy.ru" class="selection-form" method="get">
+          <fieldset class="selection-form__fieldset selection-form__fieldset--bordered">
+            <div class="container">
               <p class="selection-form__row">
                 <label for="name" class="selection-form__label">Имя:*</label>
                 <input class="selection-form__control" id="name" type="text" name="name" placeholder="Барсик" required>
@@ -55,27 +60,33 @@
                 <label for="age" class="selection-form__label">Возраст (лет):</label>
                 <input class="selection-form__control" id="age" type="text" name="age" placeholder="7">
               </p>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="selection-form__fieldset">
+          <fieldset class="selection-form__fieldset selection-form__fieldset--bordered">
+            <div class="container">
               <ul class="selection-form__wrap">
                 <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio" name="program" value="slim" id="slim" checked>
+                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="slim" id="slim" checked>
                   <label for="slim" class="selection-form__label selection-form__label--radio">Похудение</label>
                 </li>
                 <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio" name="program" value="strong" id="strong">
+                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="strong" id="strong">
                   <label for="strong" class="selection-form__label selection-form__label--radio">Набор массы</label>
                 </li>
                 <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio" name="program" value="advice" id="advice">
+                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="advice" id="advice">
                   <label for="advice" class="selection-form__label selection-form__label--radio">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">Контактные данные (владельца кота)</legend>
+          <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
+            <div class="container">
+              <legend class="selection-form__legend">
+                <span class="selection-form__legend-text">Контактные данные (владельца кота)</span>
+              </legend>
 
               <p class="selection-form__row">
                 <label for="email" class="selection-form__label">E-mail:*</label>
@@ -85,42 +96,53 @@
                 <label for="phone" class="selection-form__label">Телефон:*</label>
                 <input class="selection-form__control" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </p>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">Комментарий</legend>
+          <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
+            <div class="container">
+              <legend class="selection-form__legend">
+                <span class="selection-form__legend-text">Комментарий</span>
+              </legend>
               <textarea class="selection-form__textarea" name="text-information" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">Дополнительно</legend>
+          <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
+            <div class="container">
+              <legend class="selection-form__legend">
+                <span class="selection-form__legend-text">Дополнительно</span>
+              </legend>
 
               <ul class="selection-form__wrap">
                 <li class="selection-form__field">
-                  <input type="checkbox" class="selection-form__checkbox" name="sweetener" id="sweetener" checked>
+                  <input type="checkbox" class="selection-form__checkbox visually-hidden" name="sweetener" id="sweetener" checked>
                   <label for="sweetener" class="selection-form__label selection-form__label--checkbox">Сахарозаменитель</label>
                 </li>
                 <li class="selection-form__field">
-                  <input type="checkbox" class="selection-form__checkbox" name="water" id="water">
+                  <input type="checkbox" class="selection-form__checkbox visually-hidden" name="water" id="water">
                   <label for="water" class="selection-form__label selection-form__label--checkbox">Питьевая вода</label>
                 </li>
                 <li class="selection-form__field">
-                  <input type="checkbox" class="selection-form__checkbox" name="milk" id="milk">
+                  <input type="checkbox" class="selection-form__checkbox visually-hidden" name="milk" id="milk">
                   <label for="milk" class="selection-form__label selection-form__label--checkbox">Молоко</label>
                 </li>
                 <li class="selection-form__field">
-                  <input type="checkbox" class="selection-form__checkbox" name="vitamins" id="vitamins">
+                  <input type="checkbox" class="selection-form__checkbox visually-hidden" name="vitamins" id="vitamins">
                   <label for="vitamins" class="selection-form__label selection-form__label--checkbox">Витамины</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <fieldset class="selection-form__fieldset">
-              <button type="submit" class="selection-form__submit">Отправить заявку</button>
+          <fieldset class="selection-form__fieldset">
+            <div class="container">
+              <button type="submit" class="selection-form__submit button">Отправить заявку</button>
               <p class="selection-form__required">* — Обязательные поля</p>
-            </fieldset>
-          </form>
-        </div>
+            </div>
+          </fieldset>
+        </form>
+
       </section>
     </main>
 

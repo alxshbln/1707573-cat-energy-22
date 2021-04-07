@@ -1,0 +1,197 @@
+.selection-form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.selection-form__legend {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.selection-form__fieldset--bordered {
+  border-bottom: 1px solid $special-grey;
+}
+
+.selection-form__fieldset--lined {
+  padding-bottom: 0;
+}
+
+.selection-form__fieldset--lined .selection-form__legend {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: -20px;
+    height: 2px;
+    background-color: $contrast;
+    z-index: -1;
+  }
+}
+
+.selection-form__legend-text {
+  display: inline-block;
+  max-width: 200px;
+  padding-right: 14px;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+.selection-form__row {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.selection-form__label {
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.selection-form__control,
+.selection-form__textarea {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  border: 1px solid $special-lighter-grey-border;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}
+
+.selection-form__textarea {
+  width: 100%;
+  height: 150px;
+  padding-right: 12px;
+  resize: none;
+}
+
+.selection-form__wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.selection-form__field {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.selection-form__label--radio {
+  color: $special-grey-label;
+}
+
+.selection-form__label--checkbox {
+  color: $black;
+}
+
+.selection-form__label--radio,
+.selection-form__label--checkbox {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.selection-form__radio + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $special-grey-border;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.selection-form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: $contrast;
+  border-radius: 50%;
+}
+
+.selection-form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $special-grey-border;
+  box-sizing: border-box;
+}
+
+.selection-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent url("../img/tick.svg") no-repeat center center;
+}
+
+.selection-form__submit {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.selection-form__required {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+  text-align: center;
+}
