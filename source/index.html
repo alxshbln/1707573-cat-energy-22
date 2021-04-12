@@ -10,31 +10,33 @@
   <body class="page__body">
     <header class="page-header">
       <div class="container">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </a>
+        <div class="page-header__container">
+          <a class="page-header__logo">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </a>
 
-        <a class="page-header__title-logo">
-          <img src="img/header-title-logo.svg" width="101" height="18" alt="Заголовок Cat Energy">
-        </a>
+          <a class="page-header__title-logo">
+            <img src="img/header-title-logo.svg" width="101" height="18" alt="Заголовок Cat Energy">
+          </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__item-link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__item-link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -44,10 +46,12 @@
       <section class="heading-block">
         <div class="container">
           <div class="heading-block__wrapper">
-            <h2 class="heading-block__title">Функциональное питание для котов</h2>
+            <h2 class="heading-block__title">Функциональное<br>питание для котов</h2>
             <p class="heading-block__text">Занялся собой? Займись котом!</p>
             <img class="heading-block__image" src="img/index-can.png" alt="Банка функционального питания Cat Energy Pro с курицей" width="280" height="270">
-            <a href="#" class="heading-block__button button">Подобрать программу</a>
+            <div class="heading-block__button-outer">
+              <a href="#" class="heading-block__button button">Подобрать программу</a>
+            </div>
           </div>
         </div>
       </section>
@@ -107,43 +111,50 @@
       <section class="demonstration">
         <div class="container">
           <h2 class="demonstration__title">Живой пример</h2>
-          <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        </div>
 
-          <div class="demonstration__stats">
-            <div class="demonstration__outer">
-              <div class="demonstration__stats-item">
-                <b class="demonstration__stats-value">5 кг</b>
-                <small class="demonstration__stats-text">снижение веса</small>
-              </div>
+        <div class="demonstration__inner-bg">
+          <div class="demonstration__inner container">
+            <div class="demonstration__info">
+              <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-              <div class="demonstration__stats-item">
-                <b class="demonstration__stats-value">60 дней</b>
-                <small class="demonstration__stats-text">затрачено времени</small>
-              </div>
+              <div class="demonstration__stats">
+                <div class="demonstration__outer">
+                  <div class="demonstration__stats-item">
+                    <b class="demonstration__stats-value">5 кг</b>
+                    <small class="demonstration__stats-text">снижение веса</small>
+                  </div>
+
+                  <div class="demonstration__stats-item">
+                    <b class="demonstration__stats-value">60 дней</b>
+                    <small class="demonstration__stats-text">затрачено времени</small>
+                  </div>
+                </div>
+
+                <p class="demonstration__caption">
+                  <span>Затраты на питание:</span>
+                  <span>15 000 руб.</span>
+                </p>
+                </div>
             </div>
 
-            <p class="demonstration__caption">
-              <span>Затраты на питание:</span>
-              <span>15 000 руб.</span>
-            </p>
-          </div>
+            <div class="demonstration__progress">
+              <div class="demonstration__wrapper">
+                <div class="demonstration__image">
+                  <img src="img/demonstration-before.png" alt="Полный кот до диеты" width="311" height="232">
+                </div>
+                <div class="demonstration__image">
+                  <img src="img/demonstration-after.png" alt="Похудевший кот после диеты" width="251" height="240">
+                </div>
+              </div>
 
-          <div class="demonstration__progress">
-            <div class="demonstration__wrapper">
-              <div class="demonstration__image">
-                <img src="img/demonstration-before.png" alt="Полный кот до диеты" width="311" height="232">
+              <div class="demonstration__controls">
+                <button class="demonstration__progress-button">Было</button>
+                <div class="demonstration__progress-bar">
+                  <div class="demonstration__progress-control"></div>
+                </div>
+                <button class="demonstration__progress-button">Стало</button>
               </div>
-              <div class="demonstration__image">
-                <img src="img/demonstration-after.png" alt="Похудевший кот после диеты" width="251" height="240">
-              </div>
-            </div>
-
-            <div class="demonstration__controls">
-              <button class="demonstration__progress-button">Было</button>
-              <div class="demonstration__progress-bar">
-                <div class="demonstration__progress-control"></div>
-              </div>
-              <button class="demonstration__progress-button">Стало</button>
             </div>
           </div>
         </div>
@@ -152,12 +163,14 @@
 
     <footer class="page-footer">
       <section class="cooperation cooperation--light">
-        <div class="container">
-          <div class="cooperation__outer">
-            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-            <div class="cooperation__address">
-              <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="cooperation__city">Санкт-Петербург</p>
+        <div class="cooperation__positioner">
+          <div class="container">
+            <div class="cooperation__outer">
+              <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+              <div class="cooperation__address">
+                <p class="cooperation__street">ул. Большая<br>Конюшенная, д. 19/8</p>
+                <p class="cooperation__city">Санкт-Петербург</p>
+              </div>
             </div>
           </div>
         </div>

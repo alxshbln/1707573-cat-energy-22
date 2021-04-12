@@ -13,6 +13,15 @@
   background-color: $contrast;
   text-decoration: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }
 
 .button--light {

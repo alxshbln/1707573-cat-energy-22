@@ -1,0 +1,16 @@
+.page-header__container {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.page-header__title-logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

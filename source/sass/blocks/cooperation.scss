@@ -1,17 +1,43 @@
 .cooperation {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .cooperation--light {
   background-color: $white;
 }
 
+.cooperation__positioner {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+  }
+}
+
 .cooperation__outer {
   padding-top: 28px;
   padding-bottom: 28px;
+  display: flex;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 67px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
 }
 
 .cooperation__title {
+  width: 50%;
   margin: 0;
   padding: 0;
   font-family: $custom-font;
@@ -21,20 +47,34 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__address {
+  width: 50%;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .cooperation__street {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .cooperation__city {

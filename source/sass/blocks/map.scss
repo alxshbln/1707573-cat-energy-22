@@ -1,4 +1,8 @@
 .map img {
   display: block;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
