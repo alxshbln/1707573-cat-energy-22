@@ -10,97 +10,103 @@
   <body class="page__body">
     <header class="page-header">
       <div class="container">
-        <a href="index.html" class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </a>
+        <div class="page-header__container">
+          <a href="index.html" class="page-header__logo">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </a>
 
-        <a class="page-header__title-logo">
-          <img src="img/header-title-logo.svg" width="101" height="18" alt="Заголовок Cat Energy">
-        </a>
+          <a class="page-header__title-logo">
+            <img src="img/header-title-logo.svg" width="101" height="18" alt="Заголовок Cat Energy">
+          </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__item-link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__item-link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__item-link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__item-link">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main class="page-main">
       <section class="food-selection">
-        <div class="container">
+        <div class="container container--narrow">
           <h1 class="page-main__title">Подбор программы</h1>
-          <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="page-main__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         </div>
 
         <form action="https://echo.htmlacademy.ru" class="selection-form" method="get">
-          <fieldset class="selection-form__fieldset selection-form__fieldset--bordered">
-            <div class="container">
-              <p class="selection-form__row">
-                <label for="name" class="selection-form__label">Имя:*</label>
-                <input class="selection-form__control" id="name" type="text" name="name" placeholder="Барсик" required>
-              </p>
-              <p class="selection-form__row">
-                <label for="weight" class="selection-form__label">Вес (кг):*</label>
-                <input class="selection-form__control" id="weight" type="text" name="weight" placeholder="7" required>
-              </p>
-              <p class="selection-form__row">
-                <label for="age" class="selection-form__label">Возраст (лет):</label>
-                <input class="selection-form__control" id="age" type="text" name="age" placeholder="7">
-              </p>
-            </div>
-          </fieldset>
+          <div class="selection-form__xl-columns">
+            <fieldset class="selection-form__fieldset selection-form__fieldset--bordered selection-form__xl-col">
+              <div class="container container--narrow">
+                <p class="selection-form__row">
+                  <label for="name" class="selection-form__label">Имя:*</label>
+                  <input class="selection-form__control" id="name" type="text" name="name" placeholder="Барсик" required>
+                </p>
+                <p class="selection-form__row">
+                  <label for="weight" class="selection-form__label">Вес (кг):*</label>
+                  <input class="selection-form__control" id="weight" type="text" name="weight" placeholder="7" required>
+                </p>
+                <p class="selection-form__row">
+                  <label for="age" class="selection-form__label">Возраст (лет):</label>
+                  <input class="selection-form__control" id="age" type="text" name="age" placeholder="7">
+                </p>
+              </div>
+            </fieldset>
 
-          <fieldset class="selection-form__fieldset selection-form__fieldset--bordered">
-            <div class="container">
-              <ul class="selection-form__wrap">
-                <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="slim" id="slim" checked>
-                  <label for="slim" class="selection-form__label selection-form__label--radio">Похудение</label>
-                </li>
-                <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="strong" id="strong">
-                  <label for="strong" class="selection-form__label selection-form__label--radio">Набор массы</label>
-                </li>
-                <li class="selection-form__field">
-                  <input type="radio" class="selection-form__radio visually-hidden" name="program" value="advice" id="advice">
-                  <label for="advice" class="selection-form__label selection-form__label--radio">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
+            <fieldset class="selection-form__fieldset selection-form__fieldset--bordered selection-form__xl-col">
+              <div class="container container--narrow">
+                <ul class="selection-form__wrap selection-form__wrap--bordered">
+                  <li class="selection-form__field">
+                    <input type="radio" class="selection-form__radio visually-hidden" name="program" value="slim" id="slim" checked>
+                    <label for="slim" class="selection-form__label selection-form__label--radio">Похудение</label>
+                  </li>
+                  <li class="selection-form__field">
+                    <input type="radio" class="selection-form__radio visually-hidden" name="program" value="strong" id="strong">
+                    <label for="strong" class="selection-form__label selection-form__label--radio">Набор массы</label>
+                  </li>
+                  <li class="selection-form__field">
+                    <input type="radio" class="selection-form__radio visually-hidden" name="program" value="advice" id="advice">
+                    <label for="advice" class="selection-form__label selection-form__label--radio">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
-            <div class="container">
+            <div class="container container--narrow">
               <legend class="selection-form__legend">
                 <span class="selection-form__legend-text">Контактные данные (владельца кота)</span>
               </legend>
 
-              <p class="selection-form__row">
-                <label for="email" class="selection-form__label">E-mail:*</label>
-                <input class="selection-form__control" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              </p>
-              <p class="selection-form__row">
-                <label for="phone" class="selection-form__label">Телефон:*</label>
-                <input class="selection-form__control" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-              </p>
+              <div class="selection-form__xl-columns">
+                <p class="selection-form__row selection-form__xl-col">
+                  <label for="email" class="selection-form__label">E-mail:*</label>
+                  <input class="selection-form__control" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </p>
+                <p class="selection-form__row selection-form__xl-col">
+                  <label for="phone" class="selection-form__label">Телефон:*</label>
+                  <input class="selection-form__control" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                </p>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
-            <div class="container">
+            <div class="container container--narrow">
               <legend class="selection-form__legend">
                 <span class="selection-form__legend-text">Комментарий</span>
               </legend>
@@ -109,25 +115,25 @@
           </fieldset>
 
           <fieldset class="selection-form__fieldset selection-form__fieldset--lined">
-            <div class="container">
+            <div class="container container--narrow">
               <legend class="selection-form__legend">
                 <span class="selection-form__legend-text">Дополнительно</span>
               </legend>
 
-              <ul class="selection-form__wrap">
-                <li class="selection-form__field">
+              <ul class="selection-form__wrap selection-form__wrap--columns">
+                <li class="selection-form__field selection-form__field--col">
                   <input type="checkbox" class="selection-form__checkbox visually-hidden" name="sweetener" id="sweetener" checked>
                   <label for="sweetener" class="selection-form__label selection-form__label--checkbox">Сахарозаменитель</label>
                 </li>
-                <li class="selection-form__field">
+                <li class="selection-form__field selection-form__field--col">
                   <input type="checkbox" class="selection-form__checkbox visually-hidden" name="water" id="water">
                   <label for="water" class="selection-form__label selection-form__label--checkbox">Питьевая вода</label>
                 </li>
-                <li class="selection-form__field">
+                <li class="selection-form__field selection-form__field--col">
                   <input type="checkbox" class="selection-form__checkbox visually-hidden" name="milk" id="milk">
                   <label for="milk" class="selection-form__label selection-form__label--checkbox">Молоко</label>
                 </li>
-                <li class="selection-form__field">
+                <li class="selection-form__field selection-form__field--col">
                   <input type="checkbox" class="selection-form__checkbox visually-hidden" name="vitamins" id="vitamins">
                   <label for="vitamins" class="selection-form__label selection-form__label--checkbox">Витамины</label>
                 </li>
@@ -136,9 +142,13 @@
           </fieldset>
 
           <fieldset class="selection-form__fieldset">
-            <div class="container">
-              <button type="submit" class="selection-form__submit button">Отправить заявку</button>
-              <p class="selection-form__required">* — Обязательные поля</p>
+            <div class="container container--narrow selection-form__wrap--columns">
+              <div class="selection-form__field--col selection-form__field--col-wide">
+                <button type="submit" class="selection-form__submit button">Отправить заявку</button>
+              </div>
+              <div class="selection-form__field--col selection-form__field--col-wide">
+                <p class="selection-form__required">* — Обязательные поля</p>
+              </div>
             </div>
           </fieldset>
         </form>
@@ -147,13 +157,15 @@
     </main>
 
     <footer class="page-footer">
-      <section class="cooperation">
-        <div class="container">
-          <div class="cooperation__outer">
-            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-            <div class="cooperation__address">
-              <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="cooperation__city">Санкт-Петербург</p>
+      <section class="cooperation cooperation--light">
+        <div class="cooperation__positioner">
+          <div class="container container--narrow">
+            <div class="cooperation__outer">
+              <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+              <div class="cooperation__address">
+                <p class="cooperation__street">ул. Большая<br>Конюшенная, д. 19/8</p>
+                <p class="cooperation__city">Санкт-Петербург</p>
+              </div>
             </div>
           </div>
         </div>

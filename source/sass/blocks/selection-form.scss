@@ -22,6 +22,10 @@
 
 .selection-form__fieldset--bordered {
   border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .selection-form__fieldset--lined {
@@ -40,6 +44,10 @@
     height: 2px;
     background-color: $contrast;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      right: -100%;
+    }
   }
 }
 
@@ -49,9 +57,20 @@
   padding-right: 14px;
   background-color: $white;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 554px;
+    padding-right: 42px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .selection-form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
@@ -62,6 +81,8 @@
 }
 
 .selection-form__label {
+  flex-shrink: 0;
+  margin-right: 10px;
   font-family: $custom-font;
   font-style: normal;
   font-weight: 400;
@@ -69,6 +90,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__control,
@@ -88,6 +114,11 @@
   border: 1px solid $special-lighter-grey-border;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::placeholder {
     color: $special-dark-grey;
   }
@@ -106,11 +137,45 @@
   list-style: none;
 }
 
+.selection-form__wrap--bordered {
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid $special-lighter-grey-border;
+  }
+}
+
+.selection-form__wrap--columns {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .selection-form__field {
   margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.selection-form__field--col {
+  @media (min-width: $tablet-width) {
+    width: 45.382%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.selection-form__field--col-wide {
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
@@ -129,6 +194,10 @@
   padding-left: 45px;
   padding-top: 6px;
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .selection-form__radio + label::before {
@@ -142,6 +211,11 @@
   border: 1px solid $special-grey-border;
   border-radius: 50%;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .selection-form__radio:checked + label::after {
@@ -153,6 +227,13 @@
   height: 13px;
   background-color: $contrast;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 11px;
+  }
 }
 
 .selection-form__checkbox + label::before {
@@ -165,6 +246,11 @@
   background-color: $white;
   border: 1px solid $special-grey-border;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .selection-form__checkbox:checked + label::after {
@@ -175,6 +261,11 @@
   width: 30px;
   height: 30px;
   background: transparent url("../img/tick.svg") no-repeat center center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .selection-form__submit {
@@ -194,4 +285,29 @@
   line-height: 16px;
   color: $black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.selection-form__xl-columns {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.selection-form__xl-columns .container {
+  width: auto;
+  margin: auto;
+}
+
+.selection-form__xl-col {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-bottom: 0;
+  }
 }

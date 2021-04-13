@@ -16,12 +16,18 @@
 .page-main__title {
   margin: 0;
   padding: 0;
+  margin-top: 27px;
   font-family: $custom-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__title-outer {
@@ -30,6 +36,9 @@
 }
 
 .page-main__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
   font-family: $custom-font;
   font-style: normal;
   font-weight: 400;
@@ -37,4 +46,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

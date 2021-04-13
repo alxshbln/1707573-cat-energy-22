@@ -11,10 +11,15 @@
 }
 
 .cooperation__positioner {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
     width: 100%;
+    background-color: transparent;
   }
 }
 
@@ -27,12 +32,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 67px;
     padding-bottom: 67px;
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 570px;
+    padding-left: 74px;
+    padding-right: 74px;
+    box-sizing: border-box;
   }
 }
 
