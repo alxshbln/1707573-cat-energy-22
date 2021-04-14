@@ -13,6 +13,7 @@
   background-color: $contrast;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
