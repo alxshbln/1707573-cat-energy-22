@@ -33,3 +33,15 @@ img {
     width: 1220px;
   }
 }
+
+.container--narrow {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
