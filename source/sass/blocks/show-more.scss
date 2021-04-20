@@ -2,7 +2,16 @@
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2px solid $basic-grey;
+  }
 }
+
 
 .show-more__heading {
   margin: 0;
@@ -16,6 +25,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-more__subheading {
@@ -28,6 +42,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-more__button-show-all {
