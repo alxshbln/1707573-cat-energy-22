@@ -12,7 +12,7 @@
 
 .cooperation__positioner {
   @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +34,7 @@
     padding-bottom: 67px;
     padding-left: 0;
     padding-right: 0;
-    background-color: $basic-grey;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {

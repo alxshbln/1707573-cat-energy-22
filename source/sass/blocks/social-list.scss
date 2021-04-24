@@ -1,8 +1,9 @@
 .social-list {
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
   width: 130px;
   height: 22px;
   list-style: none;
@@ -10,4 +11,24 @@
 
 .social-list__link {
   display: block;
+}
+
+.social-list__link--vkontakte:hover path,
+.social-list__link--instagram:hover path {
+  fill: $contrast;
+}
+
+.social-list__link--facebook:hover path {
+  stroke: $contrast;
+}
+
+.social-list__link--vkontakte:active path,
+.social-list__link--instagram:active path {
+  fill: $contrast;
+  opacity: 0.3;
+}
+
+.social-list__link--facebook:active path {
+  stroke: $contrast;
+  opacity: 0.3;
 }

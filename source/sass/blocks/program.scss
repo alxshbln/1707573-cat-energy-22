@@ -151,8 +151,20 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.program__link-arrow {
+  transform: translateX(-8px);
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    width: 32px;
+    transform: translateX(0);
   }
 }
 

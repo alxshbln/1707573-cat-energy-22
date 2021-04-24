@@ -1,10 +1,18 @@
-.map img {
+.map .map__image-bg {
   display: block;
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 400px;
     margin: 0 auto;
   }
+}
+
+.map__interactive {
+  display: block;
+  width: 100%;
 }
