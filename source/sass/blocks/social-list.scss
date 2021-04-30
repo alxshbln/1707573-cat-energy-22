@@ -95,22 +95,22 @@
   }
 }
 
-.social-list__link--vkontakte:hover path,
-.social-list__link--instagram:hover path {
+.social-list__link--vkontakte:hover .social-list__link-icon path,
+.social-list__link--instagram:hover .social-list__link-icon path {
   fill: $contrast;
 }
 
-.social-list__link--facebook:hover path {
+.social-list__link--facebook:hover .social-list__link-icon path {
   stroke: $contrast;
 }
 
-.social-list__link--vkontakte:active path,
-.social-list__link--instagram:active path {
+.social-list__link--vkontakte:active .social-list__link-icon path,
+.social-list__link--instagram:active .social-list__link-icon path {
   fill: $contrast;
   opacity: 0.3;
 }
 
-.social-list__link--facebook:active path {
+.social-list__link--facebook:active .social-list__link-icon path {
   stroke: $contrast;
   opacity: 0.3;
 }
