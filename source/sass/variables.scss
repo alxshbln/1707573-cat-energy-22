@@ -10,9 +10,13 @@ $custom-font: "Oswald", "Arial", sans-serif;
 // Colors
 
 $white: #ffffff;
+$white-opacity: rgba(255, 255, 255, 0.3);
+$white-opacity-60: rgba(255, 255, 255, 0.6);
 $black: #000000;
 $dark: #111111;
 $contrast: #68b738;
+$contrast-hover: #5eaa2f;
+$contrast-header-bg: #62a63b;
 $basic-dark: #111111;
 $basic-grey: #f2f2f2;
 $special-dark-grey: #444444;

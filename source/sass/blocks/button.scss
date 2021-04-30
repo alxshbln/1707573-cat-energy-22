@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 72px;
   padding-right: 72px;
   font-family: $custom-font;
@@ -14,12 +14,21 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background-color: $contrast-hover;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 18px;
+    padding-bottom: 16px;
     padding-left: 26px;
     padding-right: 26px;
   }

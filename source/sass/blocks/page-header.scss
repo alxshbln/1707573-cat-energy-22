@@ -6,11 +6,38 @@
 
 .page-header--index {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    position: relative;
+    padding-top: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      min-height: 694px;
+      background-image: url("../img/index-background-heading-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-heading-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      min-height: 694px;
+      background-color: $contrast;
+      opacity: 0.85;
+    }
   }
 }
 
@@ -27,6 +54,14 @@
   }
 }
 
+.page-header__logo-outer {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+}
+
 .page-header__logo {
   display: inline-block;
   margin-right: 57px;
@@ -34,7 +69,7 @@
 
 .page-header__title-logo {
   display: inline-block;
-  margin-bottom: 18px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     display: none;
