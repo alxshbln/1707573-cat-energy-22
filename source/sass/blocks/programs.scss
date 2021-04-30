@@ -1,5 +1,14 @@
 .programs {
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 26px;
+  }
 }
 
 .programs__wrapper {

@@ -1,15 +1,76 @@
+.page-header {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 11px;
+  }
+}
+
+.page-header--index {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      min-height: 694px;
+      background-image: url("../img/index-background-heading-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-heading-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      min-height: 694px;
+      background-color: $contrast;
+      opacity: 0.85;
+    }
+  }
+}
+
 .page-header__container {
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
   }
 }
 
+.page-header__logo-outer {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+}
+
+.page-header__logo {
+  display: inline-block;
+  margin-right: 57px;
+}
+
 .page-header__title-logo {
+  display: inline-block;
+  margin-top: 5px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
