@@ -29,8 +29,13 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-top: 34px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
   }
 }
 
@@ -56,9 +61,14 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 55px;
+    margin-bottom: 63px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    margin-bottom: 64px;
   }
 }

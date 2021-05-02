@@ -41,6 +41,12 @@
   }
 }
 
+.page-header--inner {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
 .page-header__container {
   display: block;
   position: relative;
