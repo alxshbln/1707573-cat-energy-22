@@ -2,6 +2,10 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+  }
 }
 
 .page-header--index {
@@ -38,6 +42,12 @@
       background-color: $contrast;
       opacity: 0.85;
     }
+  }
+}
+
+.page-header--inner {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-grey;
   }
 }
 
