@@ -306,12 +306,14 @@
   }
 
   &:focus {
-    border: 2px solid $special-dark-grey;
+    border: 1px solid $special-dark-grey;
+    box-shadow: inset 0 0 0 1px $special-dark-grey;
     outline: none;
   }
 
   &:focus:invalid {
-    border: 2px solid $invalid;
+    border: 1px solid $invalid;
+    box-shadow: inset 0 0 0 1px $invalid;
   }
 }
 
