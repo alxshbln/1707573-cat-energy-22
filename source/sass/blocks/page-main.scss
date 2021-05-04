@@ -29,6 +29,12 @@
   }
 }
 
+.page-main__title--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 125px;
+  }
+}
+
 .page-main__subtitle {
   margin: 0;
   padding: 0;

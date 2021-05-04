@@ -1,6 +1,6 @@
 .additional-product {
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 18px;
   border-top: 1px solid $special-grey-border;
 
   @media (min-width: $tablet-width) {
@@ -17,8 +17,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 14px;
     border-left: none;
     border-right: none;
   }
@@ -39,7 +39,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +51,7 @@
 .additional-product__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-family: $custom-font;
   font-style: normal;
   font-weight: 400;
@@ -72,10 +72,15 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 287px;
   }
 }
 
@@ -102,12 +107,23 @@
   }
 }
 
+.additional-product__value {
+  @media (min-width: $desktop-width) {
+    width: 44px;
+  }
+}
+
 .additional-product__button {
   width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;
