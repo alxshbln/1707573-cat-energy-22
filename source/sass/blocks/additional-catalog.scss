@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
-    padding-bottom: 87px;
+    padding-top: 76px;
+    padding-bottom: 88px;
   }
 }
 
@@ -90,8 +90,8 @@
 .additional-catalog__promo {
   padding-top: 57px;
   padding-bottom: 41px;
-  padding-left: 70px;
-  padding-right: 61px;
+  padding-left: 50px;
+  padding-right: 50px;
   background: $contrast url("../img/additional-catalog-promo.jpg") no-repeat center center;
   background-size: cover;
 
@@ -105,18 +105,18 @@
     padding-left: 77px;
     padding-right: 103px;
     background: $contrast url("../img/additional-catalog-promo-tablet.jpg") no-repeat center center;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/additional-catalog-promo-tablet@2x.jpg");
-      background-size: 708px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 155px;
+    width: 165px;
     padding-top: 72px;
     padding-bottom: 20px;
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 40px;
     background: $contrast url("../img/additional-catalog-promo-desktop.jpg") no-repeat center center;
 
@@ -158,7 +158,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-56%);
+    transform: translateX(-50%);
     width: 78px;
     height: 80px;
     background: transparent url("../img/promo-icon.svg") no-repeat center center;
@@ -173,7 +173,7 @@
 
     @media (min-width: $desktop-width) {
       left: 50%;
-      transform: translateX(-55%);
+      transform: translateX(-50%);
     }
   }
 }
