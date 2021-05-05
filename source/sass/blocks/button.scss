@@ -37,4 +37,13 @@
 .button--light {
   color: $special-dark-grey;
   background-color: $basic-grey;
+
+  &:hover {
+    background-color: $special-lighten-grey-border;
+  }
+
+  &:active {
+    color: $special-dark-grey-opacity-30;
+    background-color: $special-lighten-grey-border;
+  }
 }
