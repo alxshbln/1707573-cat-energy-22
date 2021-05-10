@@ -23,6 +23,18 @@
   display: block;
 }
 
+.social-list__link-icon {
+  color: $special-grey-footer;
+
+  &:hover {
+    color: $contrast;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social-list__link--vkontakte .social-list__link-icon {
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -48,6 +60,8 @@
 }
 
 .social-list__link--facebook .social-list__link-icon {
+  fill: none;
+
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 33px;
@@ -95,22 +109,22 @@
   }
 }
 
-.social-list__link--vkontakte:hover .social-list__link-icon path,
-.social-list__link--instagram:hover .social-list__link-icon path {
-  fill: $contrast;
-}
+// .social-list__link--vkontakte:hover .social-list__link-icon path,
+// .social-list__link--instagram:hover .social-list__link-icon path {
+//   fill: $contrast;
+// }
 
-.social-list__link--facebook:hover .social-list__link-icon path {
-  stroke: $contrast;
-}
+// .social-list__link--facebook:hover .social-list__link-icon path {
+//   stroke: $contrast;
+// }
 
-.social-list__link--vkontakte:active .social-list__link-icon path,
-.social-list__link--instagram:active .social-list__link-icon path {
-  fill: $contrast;
-  opacity: 0.3;
-}
+// .social-list__link--vkontakte:active .social-list__link-icon path,
+// .social-list__link--instagram:active .social-list__link-icon path {
+//   fill: $contrast;
+//   opacity: 0.3;
+// }
 
-.social-list__link--facebook:active .social-list__link-icon path {
-  stroke: $contrast;
-  opacity: 0.3;
-}
+// .social-list__link--facebook:active .social-list__link-icon path {
+//   stroke: $contrast;
+//   opacity: 0.3;
+// }
