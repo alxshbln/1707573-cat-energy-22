@@ -197,6 +197,14 @@
   }
 }
 
+.selection-form__radio:focus-visible + .selection-form__label--radio {
+  outline: 2px solid $special-dark-grey;
+}
+
+.selection-form__checkbox:focus-visible + .selection-form__label--checkbox {
+  outline: 2px solid $special-dark-grey;
+}
+
 .selection-form__row {
   display: flex;
   justify-content: space-between;
@@ -226,6 +234,8 @@
 }
 
 .selection-form__control-icon--email {
+  fill: none;
+  stroke: $special-grey-label;
   right: 15px;
 
   @media (min-width: $desktop-width) {
@@ -234,6 +244,8 @@
 }
 
 .selection-form__control-icon--phone {
+  fill: $special-grey-label;
+  stroke: none;
   right: 13px;
 
   @media (min-width: $desktop-width) {
@@ -317,21 +329,19 @@
   }
 }
 
-.selection-form__control:focus + .selection-form__control-icon--email line,
-.selection-form__control:focus + .selection-form__control-icon--email path {
+.selection-form__control:focus + .selection-form__control-icon--email {
   stroke: $contrast;
 }
 
-.selection-form__control:focus:invalid + .selection-form__control-icon--email line,
-.selection-form__control:focus:invalid + .selection-form__control-icon--email path {
+.selection-form__control:focus:invalid + .selection-form__control-icon--email {
   stroke: $invalid;
 }
 
-.selection-form__control:focus + .selection-form__control-icon--phone path {
+.selection-form__control:focus + .selection-form__control-icon--phone {
   fill: $contrast;
 }
 
-.selection-form__control:focus:invalid + .selection-form__control-icon--phone path {
+.selection-form__control:focus:invalid + .selection-form__control-icon--phone {
   fill: $invalid;
 }
 

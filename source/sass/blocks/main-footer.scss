@@ -88,23 +88,22 @@
     align-items: center;
     margin-top: 0;
   }
-
-  &:hover path {
-    fill: $contrast;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active path {
-    fill: $contrast;
-    opacity: 0.3;
-  }
 }
 
 .main-footer__copyright-title {
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }
+}
+
+.main-footer__copyright-link-icon {
+  fill: $special-grey-footer;
+}
+
+.main-footer__copyright-link:hover .main-footer__copyright-link-icon {
+  fill: $contrast;
+}
+
+.main-footer__copyright-link:active {
+  opacity: 0.3;
 }
