@@ -28,13 +28,6 @@
   }
 }
 
-.additional-catalog__inner {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .additional-product__content {
   @media (min-width: $tablet-width) {
     display: flex;

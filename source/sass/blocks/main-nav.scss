@@ -80,11 +80,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    width: 439px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    min-width: 479px;
+    flex-wrap: wrap;
+    width: 480px;
   }
 }
 
@@ -111,6 +113,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -132,7 +139,7 @@
   }
 }
 
-.page-header--index .main-nav__item--active {
+.main-nav--index .main-nav__item--active {
   &::after {
     @media (min-width: $desktop-width) {
       bottom: -7px;
@@ -173,7 +180,7 @@
   }
 }
 
-.page-header--index .main-nav__item-link {
+.main-nav--index .main-nav__item-link {
   @media (min-width: $desktop-width) {
     color: $white;
     transition: 0.3s all ease-in-out;

@@ -384,7 +384,7 @@
   }
 }
 
-.selection-form__wrap--columns {
+.selection-form__wrap-columns {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -404,7 +404,7 @@
   }
 }
 
-.selection-form__field--col {
+.selection-form__field-col {
   @media (min-width: $tablet-width) {
     width: 45.382%;
   }
@@ -414,7 +414,7 @@
   }
 }
 
-.selection-form__field--col-wide {
+.selection-form__field-col--wide {
   @media (min-width: $desktop-width) {
     width: 570px;
   }

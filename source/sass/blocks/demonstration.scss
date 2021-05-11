@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0; //33px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -351,9 +351,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    //bottom: 53px;
     max-width: none;
-    //width: 586px;
     justify-content: flex-start;
     bottom: 54px;
     width: 604px;
