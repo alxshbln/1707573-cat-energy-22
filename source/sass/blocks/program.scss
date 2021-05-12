@@ -12,20 +12,30 @@
     padding-bottom: 57px;
     padding-left: 53px;
     padding-right: 44%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 26px;
     padding-top: 77px;
     padding-bottom: 59px;
     padding-left: 52px;
     padding-right: 52px;
     width: 46.721%;
     box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 26px;
+    }
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -35,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    padding-right: 52px;
   }
 }
 
